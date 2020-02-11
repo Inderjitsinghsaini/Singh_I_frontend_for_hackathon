@@ -1,4 +1,7 @@
 @import '_vars';
+@import 'modules/_header';
+@import 'modules/_body';
+@import 'modules/_footer';
 
 body{
     margin: 0 auto;
@@ -10,6 +13,7 @@ body{
 {
     margin:0 auto;  
 }
+
 
 
 #mainHeader

@@ -22,6 +22,7 @@
   <main id="app">
     <header id="mainHeader">
 
+      <div class="logNav">
     <div id="main_logo"><img src="images/wide-logo.png" alt="top logo" class="Logo" ></div>
 
     <nav class="mainNav">
@@ -36,7 +37,11 @@
   
   </ul>
 </nav>
+
 <router-view></router-view>
+
+</div>
+
 
 <h1 id ="theWelcome">Welcome to Ontario</h1>
 <h2 id="tagline">Find Yourself At Home</h2>
@@ -49,6 +54,7 @@
       <section id="placesToVisit">
         <img src="images/lakeOntario.png" alt="section1" class="lakeImage">
         <div id="textDiv1">
+          <div id="text">
           <h1 class="sectionHead">
             Top 25 Places to visit in Ontario
           </h1>
@@ -57,11 +63,17 @@
             <span class="dropCap">T</span>he province is located in central Canada. ... Besides being<br> Canada's main economic hub, Ontario is also known for its<br> natural diversity, including vast forests, beautiful provincial<br> parks, four of the five Great Lakes and the world-famous<br> 
             Niagara falls<br>
           </p>
+
           
           <a href="https://attractionsontario.ca/?gclid=CjwKCAiAvonyBRB7EiwAadauqS2RwL2nwkt7EArVF2hdPACDHXfus0fWgd7jDLD6IaE9wP2L7j6cDxoCPp4QAvD_BwE"><button type="button">Look For More</button></a>
           
           
+
+          <button type="button">Have A Look</button>
+        </div>
+
         </div></section>
+
         <section id="thingstoDo">
           <img src="images/wineGirls.png" alt="section2" class="wineGirlsImage">
           <div id="textDiv2">
@@ -122,12 +134,21 @@
           <section id="contactPanel">
             <h1 class="sectionHead">HAVE QUESTIONS?</h1>
             <form action="data/contact.php" method="post">
+
+              <section class="contLabel">
               <label for="name">Name</label>
-              <input id="name" type="text" name="name" placeholder="name">
+              <input id="name" type="text" name="name">
+            </section>
+
+          <section class="contLabel">
               <label for="email">Email</label>
-              <input id="email" type="email" name="email" placeholder="email">
+              <input id="email" type="email" name="email">
+            </section>
+
+          <section class="contLabel">
               <label for="message">Message</label>
               <textarea id="message" name="message"></textarea>
+            </section>
           
               <button type="submit" id="contactButton">Submit</button>
           </form>
